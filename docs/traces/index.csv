@@ -1,2 +1,2 @@
 id,type,phase,module,component,title,keywords,status,author,date,file,depends_on,depended_by
-FEAT-f4db-react-ui-component,FEAT,trace,design-system,Button,React UI 组件库骨架,react;shadcn;storybook;monorepo,confirmed,dev,2026-05-29,docs/traces/FEAT-f4db-react-ui-component.md,,
+FEAT-f4db-react-ui-component,FEAT,pipeline,design-system,Button,React UI 组件库骨架,react;shadcn;storybook;monorepo,confirmed,dev,2026-05-29,docs/traces/FEAT-f4db-react-ui-component.md,,
