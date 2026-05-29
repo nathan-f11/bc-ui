@@ -1,0 +1,65 @@
+{
+  "feat_id": "FEAT-f4db-react-ui-component",
+  "task_level": "FEATURE",
+  "started_at": "2026-05-29T12:00:00.000Z",
+  "ended_at": "2026-05-29T13:10:00.000Z",
+  "baseline_hashes": "N/A",
+  "phases": [
+    {
+      "phase": -1,
+      "skill": "pipeline",
+      "decision": "创建 worktree feat/f4db-react-ui-component @ ray-use-wt-feat-f4db",
+      "artifacts": [],
+      "notes": "git init + worktree 隔离"
+    },
+    {
+      "phase": 0,
+      "skill": "pipeline",
+      "decision": "FEATURE 级，绿field 脚手架",
+      "artifacts": ["docs/traces/FEAT-f4db-react-ui-component.md"],
+      "notes": "无既有产品地图，新建 design-system 模块"
+    },
+    {
+      "phase": 2,
+      "skill": "architect",
+      "decision": "定义 Button/Badge variant 合约与 UI_EXPORTS",
+      "artifacts": [
+        "docs/specs/FEAT-f4db-react-ui-component.spec.md",
+        "packages/ui/src/types/components.ts"
+      ],
+      "notes": "tsup 构建选型"
+    },
+    {
+      "phase": 3,
+      "skill": "qa",
+      "decision": "8 个验收测试，RED 后实现",
+      "artifacts": ["packages/ui/src/__tests__/FEAT-f4db-react-ui-component.test.tsx"],
+      "notes": "vitest + testing-library"
+    },
+    {
+      "phase": 4,
+      "skill": "coder",
+      "decision": "pnpm monorepo + shadcn 四组件 + Storybook 8",
+      "artifacts": [
+        "packages/ui",
+        "apps/storybook",
+        "CLAUDE.md"
+      ],
+      "notes": "1 轮通过，8/8 tests"
+    },
+    {
+      "phase": 5,
+      "skill": "audit",
+      "decision": "验收标准全部满足，无安全问题",
+      "artifacts": [],
+      "notes": "得分 92/100"
+    },
+    {
+      "phase": 6,
+      "skill": "update-map",
+      "decision": "创建 design-system 产品文档网络",
+      "artifacts": ["docs/product/PRODUCT-MAP.md", "docs/product/modules/design-system/"],
+      "notes": "5 组件 + 双向关系"
+    }
+  ]
+}

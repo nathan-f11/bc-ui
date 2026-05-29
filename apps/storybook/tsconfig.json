@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "paths": {
+      "@ray/ui": ["../../packages/ui/src/index.ts"],
+      "@ray/ui/*": ["../../packages/ui/src/*"]
+    }
+  },
+  "include": [".storybook", "stories"]
+}
