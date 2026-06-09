@@ -6,6 +6,7 @@ import "../../../packages/ui/src/styles/globals.css";
 const preview: Preview = {
   parameters: {
     controls: { matchers: { color: /(background|color)$/i, date: /Date$/i } },
+    layout: "centered",
   },
   decorators: [
     withThemeByClassName({
@@ -15,6 +16,11 @@ const preview: Preview = {
       },
       defaultTheme: "light",
     }),
+    (Story) => (
+      <div className="bg-background p-8 text-foreground">
+        <Story />
+      </div>
+    ),
   ],
 };
 

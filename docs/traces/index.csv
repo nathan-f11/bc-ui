@@ -1,2 +1,4 @@
 id,type,phase,module,component,title,keywords,status,author,date,file,depends_on,depended_by
 FEAT-f4db-react-ui-component,FEAT,pipeline,design-system,Button,React UI 组件库骨架,react;shadcn;storybook;monorepo,confirmed,dev,2026-05-29,docs/traces/FEAT-f4db-react-ui-component.md,,
+FEAT-217f-testing-stack-completion,FEAT,pipeline,design-system,StorybookApp,测试体系补齐 6.1 6.10 6.11 6.7,vitest;chromatic;playwright;storybook,confirmed,dev,2026-05-29,docs/traces/FEAT-217f-testing-stack-completion.md,,
+FEAT-cc94-shadcn-组件全集补齐,FEAT,pipeline,design-system,StorybookApp,shadcn 组件全集补齐,shadcn;radix;storybook;chromatic,confirmed,dev,2026-05-29,docs/traces/FEAT-cc94-shadcn-组件全集补齐.md,,

@@ -1,0 +1,50 @@
+{
+  "feat_id": "FEAT-cc94-shadcn-组件全集补齐",
+  "task_level": "FEATURE",
+  "started_at": "2026-05-29T15:40:00.000Z",
+  "ended_at": "2026-06-09T05:25:00.000Z",
+  "baseline_hashes": {
+    "docs/product/PRODUCT-MAP.md": "691d5d96",
+    "docs/product/modules/design-system/index.md": "bce185f1",
+    "docs/product/modules/design-system/Button.md": "290a2a43"
+  },
+  "phases": [
+    {
+      "phase": -1,
+      "skill": "pipeline",
+      "decision": "worktree feat/cc94-shadcn-component-full @ ray-use-wt-feat-cc94",
+      "artifacts": [],
+      "notes": "隔离开发，不影响主工作区"
+    },
+    {
+      "phase": 0,
+      "skill": "pipeline",
+      "decision": "FEATURE 级别，59 shadcn 组件 + 3 组合组件",
+      "artifacts": ["docs/traces/FEAT-cc94-shadcn-组件全集补齐.md"],
+      "notes": "mode: dev，跳过 PM 补充"
+    },
+    {
+      "phase": 4,
+      "skill": "coder",
+      "decision": "shadcn CLI v2.3 + registry 脚本批量安装，修复 import 路径",
+      "artifacts": [
+        "packages/ui/src/components/ui/*.tsx",
+        "packages/ui/src/index.ts",
+        "apps/storybook/stories/*.stories.tsx",
+        "scripts/install-shadcn-components.mjs",
+        "scripts/generate-ui-artifacts.mjs"
+      ],
+      "notes": "60 组件文件，60 stories，60 RTL 测试全绿"
+    },
+    {
+      "phase": 6,
+      "skill": "update-map",
+      "decision": "产品地图更新为 61 项组件索引",
+      "artifacts": [
+        "docs/product/PRODUCT-MAP.md",
+        "docs/product/modules/design-system/index.md"
+      ],
+      "notes": "自动生成 56 个新组件 md"
+    }
+  ]
+}

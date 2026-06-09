@@ -3,18 +3,13 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Input } from "@ray/ui";
 
 const meta = {
-  title: "Primitives/Input",
-  component: Input,
+  title: "Forms/Input",
   tags: ["autodocs"],
-} satisfies Meta<typeof Input>;
+} satisfies Meta;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: { placeholder: "Email" },
-};
-
-export const Disabled: Story = {
-  args: { placeholder: "Disabled", disabled: true },
+  render: () => (<Input placeholder="Type here" />),
 };

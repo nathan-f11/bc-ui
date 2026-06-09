@@ -19,6 +19,7 @@ const config: StorybookConfig = {
       resolve: {
         alias: {
           "@ray/ui": path.resolve(dirname, "../../../packages/ui/src/index.ts"),
+          "@": path.resolve(dirname, "../../../packages/ui/src"),
         },
       },
     });
