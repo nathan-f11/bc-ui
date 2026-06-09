@@ -4,7 +4,8 @@
   "scripts": {
     "build": "pnpm -r build",
     "dev": "pnpm --filter storybook dev",
-    "test": "pnpm --filter @ray/ui test && pnpm --filter storybook test"
+    "test": "pnpm --filter @ray/ui test && pnpm --filter storybook test",
+    "test:e2e": "pnpm --filter storybook build && pnpm --filter e2e test"
   },
   "devDependencies": {
     "typescript": "^5.8.3"

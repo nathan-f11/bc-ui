@@ -47,6 +47,7 @@
 - Storybook 8 + Vite + `@storybook/addon-themes`
 - Vitest + composeStories RTL（60 stories）
 - Chromatic 视觉回归（PR CI，snapshot 待重新 baseline）
+- Playwright smoke E2E（`apps/e2e`）
 
 ## 已知限制
 

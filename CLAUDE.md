@@ -44,7 +44,11 @@
 |------|------|
 | 安装 | `pnpm install` |
 | 构建 UI 包 | `pnpm --filter @ray/ui build` |
-| 测试 | `pnpm --filter @ray/ui test` |
+| 测试（unit） | `pnpm --filter @ray/ui test` |
+| 测试（story RTL） | `pnpm --filter storybook test` |
+| 测试（全部 unit） | `pnpm test` |
+| E2E smoke | `pnpm test:e2e` |
+| Chromatic | `pnpm --filter storybook build && pnpm --filter storybook chromatic` |
 | Storybook | `pnpm --filter storybook dev` |
 | 类型目录 | packages/ui/src/types |
 
