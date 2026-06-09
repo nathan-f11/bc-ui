@@ -1,3 +1,4 @@
+import path from "node:path";
 import { defineConfig } from "tsup";
 
 export default defineConfig({
@@ -10,6 +11,9 @@ export default defineConfig({
   esbuildOptions(options) {
     options.banner = {
       js: '"use client";',
+    };
+    options.alias = {
+      "@": path.resolve("src"),
     };
   },
 });
