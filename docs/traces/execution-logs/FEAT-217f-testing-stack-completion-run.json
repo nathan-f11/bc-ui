@@ -1,0 +1,56 @@
+{
+  "feat_id": "FEAT-217f-testing-stack-completion",
+  "task_level": "FEATURE",
+  "started_at": "2026-05-29T14:10:00.000Z",
+  "ended_at": "2026-05-29T14:25:00.000Z",
+  "baseline_hashes": "691d5d96,31d0a7f2,ec2a425a",
+  "phases": [
+    {
+      "phase": 0,
+      "skill": "pipeline",
+      "decision": "FEATURE 级，当前工作区分支 feat/217f-testing-stack-completion",
+      "artifacts": [],
+      "notes": "用户选择 B"
+    },
+    {
+      "phase": 2,
+      "skill": "architect",
+      "decision": "测试合约：cn/常量/story映射/e2e smoke",
+      "artifacts": ["docs/specs/FEAT-217f-testing-stack-completion.spec.md"],
+      "notes": "done"
+    },
+    {
+      "phase": 3,
+      "skill": "qa",
+      "decision": "预写 cn、constants、composeStories、e2e 测试",
+      "artifacts": [
+        "packages/ui/src/lib/__tests__/cn.test.ts",
+        "packages/ui/src/types/__tests__/components.test.ts",
+        "apps/storybook/stories/*.stories.test.tsx",
+        "apps/e2e/tests/storybook.spec.ts"
+      ],
+      "notes": "RED→GREEN"
+    },
+    {
+      "phase": 4,
+      "skill": "coder",
+      "decision": "实现测试基础设施与 CI",
+      "artifacts": ["apps/e2e", ".github/workflows", "apps/storybook/vitest.config.ts"],
+      "notes": "1 轮通过"
+    },
+    {
+      "phase": 5,
+      "skill": "audit",
+      "decision": "94/100 通过",
+      "artifacts": ["docs/audit/FEAT-217f-testing-stack-completion-audit.md"],
+      "notes": "34 unit/story + 4 e2e"
+    },
+    {
+      "phase": 6,
+      "skill": "update-map",
+      "decision": "更新 StorybookApp、index、Button 文档",
+      "artifacts": ["docs/product/modules/design-system/"],
+      "notes": "done"
+    }
+  ]
+}
